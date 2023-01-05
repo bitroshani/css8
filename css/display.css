@@ -1,0 +1,15 @@
+#inline span{
+    width: 100px;
+    height: 150px;
+    background-color: yellow ;
+    margin: 20px;
+    padding: 20px;
+}
+#inlineblock span{
+    display: inline-block;
+    width: 100px;
+    height: 150px;
+    background-color: blue;
+    margin: 20px;
+    padding: 20px;
+}
