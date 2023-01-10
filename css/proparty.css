@@ -1,0 +1,38 @@
+.box{
+    width: 200px;
+    height: 100px;
+    background-color: cadetblue;
+    color: antiquewhite;   
+}
+.retativedemo{
+    position: relative;
+    top: 10px;
+    left: 200px;
+}
+.absolutedemo{
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
+.perents{
+    position: relative;
+    background-color: brown;
+    width: 500px;
+    height: 400px;
+}
+.child{
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+
+}
+.fixed{
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+
+}
+.sticty{
+    position: sticky;
+    top: 10px;
+}
