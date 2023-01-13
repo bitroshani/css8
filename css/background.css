@@ -1,0 +1,36 @@
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    height: 1500px;
+}
+/* .data{
+    width: 700px;
+    height: 400px;
+    background-image: url(../images/nature.jpg);
+    background-position: center center;
+    background-attachment: scroll;
+    background-repeat: repeat-x;
+    background-color: #ff0000;
+} */
+.data{
+    background:  url(../images/nature.jpg) scroll repeat-x center center;
+    width: 700px;
+    height: 400px;
+    position: relative;
+}
+ img{
+   
+    width: 400px;
+    height: 300px;  
+    float: right;
+    background-repeat: no-repeat;
+    top: 350px;
+    left: 590PX;
+    position: absolute;
+
+     
+}
