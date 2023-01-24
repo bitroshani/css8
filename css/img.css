@@ -1,0 +1,99 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+ .container{
+    border: 2px solid red;
+    max-width: 1300px;
+    height: 600px;
+    margin: 0 auto;
+
+}
+.hero{
+    column-gap: 10px;
+    display: flex;
+
+}
+.box1,.box2{
+    border: 2px solid green;
+    height: 450px;
+    flex-basis: 50%;
+    position: relative;
+
+}
+.box1{
+    background: linear-gradient(to right,rgba(0 0 0/.8),rgba(0 0 0/.2)),url(../img/nature.jpg);
+    background-size: cover;
+
+    
+}
+.box2::before{
+    background: linear-gradient(to right,rgba(0 0 0/.8),rgba(0 0 0/.2)),url(../img/nature.jpg);
+    background-size: cover;
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    /* inset: 0; */
+
+}
+.box1 h3,.box2 h3{
+    padding: 40px;
+    color: #fff;
+    font-size: 50px;
+
+}
+.box2 h3{
+    position: relative;
+    z-index: 99;
+}
+
+
+
+.container1{
+    border: 2px solid red;
+    max-width: 1300px;
+    height: 600px;
+    margin: 0 auto;
+
+}
+.nature{
+    column-gap:10px;
+    display: flex; 
+}
+.box3,.box4{
+    border: 2px solid green;
+    height: 450px;
+    flex-basis: 50%;
+    position: relative;
+
+}
+.box3{
+    background: linear-gradient(to right,rgba(0 0 0/.8),rgba(0 0 0/.2));
+    background-size: cover;
+}
+.box4::before{
+    background: linear-gradient(to right,rgba(0 0 0/.8),rgba(0 0 0/.2));
+    background-size: cover;
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    inset: 0;    
+}
+.box3 h3,.box4 h3{
+    padding: 40px;
+    color: #fff;
+    font-size: 50px;
+
+}
+.box4 h3{
+    position: relative;
+    z-index: 99;
+}
+   

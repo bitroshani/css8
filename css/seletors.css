@@ -1,4 +1,4 @@
-.combi>p{
+/* .combi>p{
     color: red;
 }
 .combi h2+p{
@@ -40,4 +40,70 @@ p i:last-child{
 input:focus{
     outline: none;
     border:2px solid brown;
+} */
+
+/* .data p::first-letter{
+    font-size: 50px;
+}
+.data p:first-child::first-line{
+    font-weight: bold;
+}
+.data h1+p::first-line{
+    color: red;
+}
+.data h2::after{
+    content: '--';
+}
+.data h2::before{
+    content: '**';
+} */
+
+
+/* .vadilal ul li{
+    list-style-type: none;
+    margin-bottom: 12px;
+}
+.vadilal ul li::before{
+    content: '*';
+    background-color: brown;
+    color: white;
+    padding: 4px 3px;
+    margin-right: 10px;
+} */
+
+
+.vadilal ul li{
+    list-style-type: none;
+    margin-bottom: 12px;
+    position: relative;
+}
+.vadilal ul li::before{
+    content: '';
+    top: 0;
+    left: -22px;
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    background-color: brown;
+    color: white;
+}
+.vadilal ul li:first-child::before{
+    
+    background: url(../images/home.png);
+    background-size: 100%;
+}
+.vadilal ul li:nth-child(2)::before{
+    
+    background: url(../images/contact.png);
+    background-size: 100%;
+}
+.vadilal ul li:nth-child(3)::before{
+    
+    background: url(../images/about.png);
+    background-size: 100%;
+}
+.vadilal ul li:last-child::before{
+    
+    background: url(../images/product.png);
+    background-size: 100%;
 }
