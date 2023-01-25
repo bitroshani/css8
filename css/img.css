@@ -1,99 +1,86 @@
-*{
+* {
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
 }
- .container{
-    border: 2px solid red;
-    max-width: 1300px;
-    height: 600px;
+
+.container {
+    max-width: 1200px;
     margin: 0 auto;
-
+    border: 2px solid red;
+    height: 600px;
 }
-.hero{
-    column-gap: 10px;
+
+.hero {
     display: flex;
-
+    column-gap: 10px;
 }
-.box1,.box2{
-    border: 2px solid green;
+
+.box1,
+.box2 {
+    width: 50%;
     height: 450px;
-    flex-basis: 50%;
+    display: flex;
+    border: 2px solid goldenrod;
     position: relative;
-
 }
-.box1{
-    background: linear-gradient(to right,rgba(0 0 0/.8),rgba(0 0 0/.2)),url(../img/nature.jpg);
+
+.box1 {
+
+    background: linear-gradient(to right, rgba(255 0 0/.6), rgba(255 255 255/0.2)), url(../images/nature.jpg);
     background-size: cover;
-
-    
+    background-position: center center;
 }
-.box2::before{
-    background: linear-gradient(to right,rgba(0 0 0/.8),rgba(0 0 0/.2)),url(../img/nature.jpg);
+
+.box2::before {
+    background: linear-gradient(to right, #ff000099, rgba(255 255 255/0.2)), url(../images/nature.jpg);
     background-size: cover;
     content: '';
     position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    /* inset: 0; */
-
+    inset: 0;
+    background-position: center center;
+    z-index: -1;
 }
-.box1 h3,.box2 h3{
-    padding: 40px;
-    color: #fff;
-    font-size: 50px;
 
-}
-.box2 h3{
+/* .box2 h2 {
+    z-index: 9;
     position: relative;
-    z-index: 99;
-}
+} */
 
 
 
-.container1{
-    border: 2px solid red;
-    max-width: 1300px;
-    height: 600px;
-    margin: 0 auto;
-
-}
-.nature{
-    column-gap:10px;
-    display: flex; 
-}
 .box3,.box4{
+    width: 50%;
     border: 2px solid green;
     height: 450px;
-    flex-basis: 50%;
     position: relative;
+}
+.box3 img,.box4 img{
+    width: 100%;
+    height: 100%;
+   position: relative;
+   z-index: -1;
+   
 
 }
 .box3{
-    background: linear-gradient(to right,rgba(0 0 0/.8),rgba(0 0 0/.2));
-    background-size: cover;
+
+    background: linear-gradient(to right, rgba(255 0 0/.6), rgba(255 255 255/0.2));
+   
 }
 .box4::before{
-    background: linear-gradient(to right,rgba(0 0 0/.8),rgba(0 0 0/.2));
-    background-size: cover;
-    content: '';
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    inset: 0;    
-}
-.box3 h3,.box4 h3{
-    padding: 40px;
-    color: #fff;
-    font-size: 50px;
 
+    background: linear-gradient(to right, rgba(255 0 0/.6), rgba(255 255 255/0.2));
+    content: '';
+    /* z-index:9; */
+    inset: 0;
+    position: absolute;
+    object-fit: cover;
+   object-position: center center; 
 }
-.box4 h3{
-    position: relative;
-    z-index: 99;
-}
-   
+.innerdata{
+    top: 20px;
+    left: 20px;
+    position: absolute;
+    color: white;
+} 
