@@ -7,40 +7,83 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
     <title>Document</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./css/swiperslider.css">
 </head>
 
 <body>
-   <div class="swiper main_slider">
-    <!-- Additional required wrapper -->
-    <div class="swiper-wrapper">
-        <!-- Slides -->
-        <div class="swiper-slide">
-            <img src="./images/r1.jpeg" alt="">
+    <div class="swiper main_slider">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide">
+                <img src="./images/r1.jpeg" alt="">
+            </div>
+            <div class="swiper-slide">
+                <img src="./images/r2jpeg" alt="">
+            </div>
+            <div class="swiper-slide">
+                <img src="./images/r3.jpeg" alt="">
+            </div>
+
         </div>
-        <div class="swiper-slide">
-            <img src="./images/r2jpeg" alt="">
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+
+        <!-- If we need navigation buttons -->
+        <div class="prev">
+            <i class=" fa-solid fa-chevron-left"></i>
         </div>
-        <div class="swiper-slide">
-            <img src="./images/r3.jpeg" alt="">
+        <div class="next">
+            <i class="fa-solid fa-chevron-right"></i>
         </div>
 
+        <!-- If we need scrollbar -->
+        <div class="swiper-scrollbar"></div>
     </div>
-    <!-- If we need pagination -->
-    <div class="swiper-pagination"></div>
+    <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <img src="./images/r1.jpeg" alt="">
+            </div>
+            <div class="swiper-slide">
+                <img src="./images/r2jpeg" alt="">
+            </div>
+            <div class="swiper-slide">
+                <img src="images/r3.jpeg" alt="">
+            </div>
+            <div class="swiper-slide">
+                <img src="images/r1.jpeg" alt="">
+            </div>
+            <div class="swiper-slide">
+                <img src="images/r2jpeg" alt="">
+            </div>
+            <div class="swiper-slide">
+                <img src="images/r3.jpeg" alt="">
+            </div>
+            <div class="swiper-slide">
+                <img src="images/r1.jpeg" alt="">
+            </div>
+            <div class="swiper-slide">
+                <img src="images/r2jpeg" alt="">
+            </div>
+            <div class="swiper-slide">
+                <img src="images/r3.jpeg" alt="">
+            </div>
+        </div>
+        <div class="swiper-pagination"></div>
 
-    <!-- If we need navigation buttons -->
-    <div class="prev">
-        <i class=" fa-solid fa-chevron-left"></i>
-    </div>
-    <div class="next">
-      <i class="fa-solid fa-chevron-right"></i>
+        <div class="prev">
+            <i class=" fa-solid fa-chevron-left"></i>
+        </div>
+        <div class="next">
+            <i class="fa-solid fa-chevron-right"></i>
+        </div>
     </div>
 
-    <!-- If we need scrollbar -->
-    <div class="swiper-scrollbar"></div>
-    </div>
+
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
 
@@ -53,7 +96,7 @@
             // If we need pagination
             pagination: {
                 el: '.swiper-pagination',
-                clickable:true
+                clickable: true
             },
 
             // Navigation arrows
@@ -69,6 +112,43 @@
         });
 
     </script>
+
+
+
+
+
+    <script>
+        var swiper1 = new Swiper(".mySwiper", {
+            slidesPerView: 1,
+            spaceBetween: 10,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            navigation: {
+                nextEl: '.next',
+                prevEl: '.prev',
+            },
+
+            breakpoints: {
+                640: {
+                    slidesPerView: 2,
+                    spaceBetween: 20,
+                },
+                768: {
+                    slidesPerView: 4,
+                    spaceBetween: 40,
+                },
+                1024: {
+                    slidesPerView: 5,
+                    spaceBetween: 50,
+                },
+            },
+        });
+    </script>
+
+
+
 </body>
 
 </html>
